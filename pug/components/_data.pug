@@ -1,0 +1,35 @@
+form
+    .row.mb-3
+        .col-md-6
+            label.form-label(for="nombre") Nombre
+            input#nombre.form-control(type="text" placeholder="Tu nombre")
+        .col-md-6
+            label.form-label(for="apellido") Apellido
+            input#apellido.form-control(type="text" placeholder="Tu apellido")
+
+    .row.mb-3
+        .col-md-6
+            label.form-label(for="email") Email
+            input#email.form-control(type="email" placeholder="tucorreo@example.com")
+        .col-md-6
+            label.form-label(for="telefono") Teléfono
+            input#telefono.form-control(type="number" placeholder="Tu número de teléfono")
+
+    .row.mb-3
+        .col-12
+            label.form-label(for="distrito") Distrito
+            select#distrito.form-select
+                option(value="") Selecciona tu distrito
+                option(value="1") Distrito 1
+                option(value="2") Distrito 2
+                option(value="3") Distrito 3
+
+    .row.mb-3
+        .col-12
+            label.form-label(for="direccion") Dirección
+            input#direccion.form-control(type="text" placeholder="Tu dirección completa")
+
+    .row.mb-3
+        .col-12
+            label.form-label(for="notas") Notas
+            textarea#notas.form-control(rows="3" placeholder="Escribe alguna nota adicional")

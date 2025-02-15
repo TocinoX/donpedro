@@ -1,0 +1,13 @@
+table {
+    min-width: 600px;
+    th, td {
+        vertical-align: middle;
+    }
+
+    .input-group {
+        max-width: 120px;
+        button {
+            width: 30px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.invite-container {
+    aspect-ratio: 1/1;
+    @media(min-width: 768px) {
+        height: 500px;
+        aspect-ratio: auto;
+    }
+
+    background-image:  url('../img/invite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .invite-content {
+        background-color: rgba($color: #000000, $alpha: .5);
+    }
+}

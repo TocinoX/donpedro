@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        include components/_head
+    body 
+        header.shadow-sm
+            include components/_header
+
+        main 
+            include components/_slider
+
+            .container 
+                section 
+                    include components/_categories
+
+                section 
+                    include components/_trending
+
+            section 
+                    include components/_parallax
+
+            .container 
+                section 
+                    include components/_information
+
+            section 
+                include components/_invite
+
+        footer.bg-light-gray.pt-5 
+            include components/_footer
+
+        script(src="https://kit.fontawesome.com/1822c1a120.js") 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js") 
+        script(src="js/main.js") 

@@ -1,0 +1,70 @@
+//- Navbar principal
+nav.navbar.navbar-expand-lg.bg-light.px-4.navbar-primary
+    .container
+        //- Logo
+        a.navbar-brand(href="#") 
+            img(src="img/logo.png" alt="Logo" height="40")
+
+        .d-flex
+            //- Barra de búsqueda (desktop)
+            form.d-none.d-lg-flex.mx-auto.me-2
+                input.form-control(type="search" placeholder="Buscar...")
+                button.btn.btn-secondary(type="submit")
+                    i.fa-solid.fa-magnifying-glass
+
+            //- Botones cuenta y carrito (desktop)
+            .d-none.d-lg-flex.gap-2
+                button.btn.btn-outline-primary
+                    | Cuenta 
+                    i.fa-solid.fa-user
+                a.btn.btn-primary(href="car.html")
+                    | Carrito 
+                    i.fa-solid.fa-shopping-cart
+
+        //- Botón menú hamburguesa (mobile)
+        button.navbar-toggler.d-lg-none(type="button")
+            i.fa-solid.fa-bars.fa-md
+
+//- Navbar secundaria
+nav.navbar.navbar-expand-lg.bg-light.px-4.navbar-secondary.d-none.d-lg-block
+    .container
+        //- Botón Categorías
+        button.btn.btn-primary
+            i.fa-solid.fa-bars.me-2
+            span.me-4 Categorías
+            i.fa-solid.fa-chevron-down
+
+        //- Menú de navegación
+        ul.navbar-nav.ms-auto.d-flex.gap-3
+            li.nav-item: a.nav-link.text-primary(href="#"): b Inicio
+            li.nav-item: a.nav-link.text-dark(href="#"): b Productos
+            li.nav-item: a.nav-link.text-dark(href="#"): b Nosotros
+            li.nav-item: a.nav-link.text-dark(href="#"): b Contacto
+
+//- Menú lateral (Mobile)
+aside#mobileMenu.shadow
+    div.menu-content
+        //- Botón cerrar
+        h4.w-100.pb-3.border-bottom Menú
+            button.close-menu.btn.float-end.p-0
+                i.fa-solid.fa-xmark.fa-lg.text-gray
+        
+        //- Barra de búsqueda (Mobile)
+        form.d-flex.mt-3
+            input.form-control.me-0(type="search" placeholder="Buscar...")
+            button.btn.btn-secondary(type="submit")
+                i.fa-solid.fa-magnifying-glass
+        
+        //- Botones cuenta y carrito (Mobile)
+        .d-flex.gap-2.mt-3
+            button.btn.btn-outline-primary
+                i.fa-solid.fa-user
+            button.btn.btn-primary
+                i.fa-solid.fa-shopping-cart
+
+        //- Opciones de navegación
+        ul.nav.flex-column.mt-4
+            li.nav-item: a.nav-link.text-primary.ps-0(href="#") Inicio
+            li.nav-item: a.nav-link.text-dark.ps-0(href="#") Productos
+            li.nav-item: a.nav-link.text-dark.ps-0(href="#") Nosotros
+            li.nav-item: a.nav-link.text-dark.ps-0(href="#") Contacto

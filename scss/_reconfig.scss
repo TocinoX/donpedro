@@ -1,0 +1,198 @@
+:root {
+    --bs-primary: #629D23;
+    --bs-secondary: #25332C;
+    --bs-dark: #191919;
+    --bs-light: #FEFEFE;
+    --bs-light-gray: #E9E9E9;
+    --bs-gray: #B5B5B5;
+}
+
+hr {
+    border: none;
+    height: 1px; 
+    background-color: var(--bs-gray);
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: var(--bs-light) !important;
+
+    &:hover {
+        background-color: #517E1C !important; // Un tono más oscuro
+        border-color: #517E1C !important;
+    }
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    color: var(--bs-light) !important;
+
+    &:hover {
+        background-color: #1D2823 !important;
+        border-color: #1D2823 !important;
+    }
+}
+
+.btn-dark {
+    background-color: var(--bs-dark) !important;
+    border-color: var(--bs-dark) !important;
+    color: var(--bs-light) !important;
+
+    &:hover {
+        background-color: #111 !important;
+        border-color: #111 !important;
+    }
+}
+
+.btn-light {
+    background-color: var(--bs-light) !important;
+    border-color: var(--bs-light) !important;
+    color: var(--bs-dark) !important;
+
+    &:hover {
+        background-color: #F0F0F0 !important;
+        border-color: #F0F0F0 !important;
+    }
+}
+
+.btn-gray {
+    background-color: var(--bs-gray) !important;
+    border-color: var(--bs-gray) !important;
+    color: var(--bs-gray) !important;
+
+    &:hover {
+        background-color: #9E9E9E !important;
+        border-color: #9E9E9E !important;
+    }
+}
+
+.btn-light-gray {
+    background-color: var(--bs-light-gray) !important;
+    border-color: var(--bs-light-gray) !important;
+    color: var(--bs-dark) !important;
+
+    &:hover {
+        background-color: #D5D5D5 !important;
+        border-color: #D5D5D5 !important;
+    }
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: var(--bs-primary) !important;
+        color: var(--bs-light) !important;
+    }
+}
+
+.btn-outline-secondary {
+    color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: var(--bs-secondary) !important;
+        color: var(--bs-light) !important;
+    }
+}
+
+.btn-outline-dark {
+    color: var(--bs-dark) !important;
+    border-color: var(--bs-dark) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: var(--bs-dark) !important;
+        color: var(--bs-light) !important;
+    }
+}
+
+.btn-outline-light {
+    color: var(--bs-light) !important;
+    border-color: var(--bs-light) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: var(--bs-light) !important;
+        color: var(--bs-dark) !important;
+    }
+}
+
+.btn-outline-gray {
+    color: var(--bs-gray) !important;
+    border-color: var(--bs-gray) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: var(--bs-gray) !important;
+        color: var(--bs-white) !important;
+    }
+}
+
+.btn-outline-light-gray {
+    color: var(--bs-light-gray) !important;
+    border-color: var(--bs-light-gray) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        background-color: var(--bs-light-gray) !important;
+        color: var(--bs-dark) !important;
+    }
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary) !important;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.text-dark {
+    color: var(--bs-dark) !important;
+}
+
+.bg-light {
+    background-color: var(--bs-light) !important;
+}
+
+.text-light {
+    color: var(--bs-light) !important;
+}
+
+.bg-gray {
+    background-color: var(--bs-gray) !important;
+}
+
+.text-gray {
+    color: var(--bs-gray) !important;
+}
+
+.bg-light-gray {
+    background-color: var(--bs-light-gray) !important;
+}
+
+.text-light-gray {
+    color: var(--bs-light-gray) !important;
+}

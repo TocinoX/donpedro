@@ -1,0 +1,15 @@
+footer {
+    .list-unstyled {
+        padding: 0;
+        li {
+            margin-bottom: 5px;
+            a {
+                text-decoration: none;
+                color: var(--bs-dark);
+                &:hover {
+                    color: var(--bs-primary);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        include components/_head
+
+    body 
+        header.shadow-sm
+            include components/_header
+
+        main
+            .container  
+                section 
+                    .d-flex.justify-content-center.align-items-center.text-gray.mb-5
+                        h2.d-none.d-lg-block Carrito de Compras
+                        i.fa-solid.fa-arrow-right.fa-xl.mx-4.d-none.d-lg-block
+                        h2.d-none.d-lg-block Datos de Envío
+                        i.fa-solid.fa-arrow-right.fa-xl.mx-4.d-none.d-lg-block
+                        h2.text-primary.text-decoration-underline Método de Pago
+
+                    .row 
+                        .col-12.col-lg-8.mb-5
+                            include components/_method
+
+                        .col-12.col-lg-4
+                            include components/_summary
+
+        footer.bg-light-gray.pt-5 
+            include components/_footer
+
+        script(src="https://kit.fontawesome.com/1822c1a120.js") 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js") 
+        script(src="js/main.js") 

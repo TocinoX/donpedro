@@ -1,0 +1,26 @@
+.table-responsive
+    table.table
+        thead.bg-light
+            tr
+                th.text-gray: b Producto
+                th.text-gray: b Precio
+                th.text-gray: b Cantidad
+                th.text-gray: b Subtotal
+                th.text-gray: b 
+
+        tbody
+            tr
+                td 
+                    .d-flex.align-items-center
+                        img(src="img/gaseosa.png" alt="Producto" height="75")
+                        b Coca Cola
+                td S/. 12.90
+                td 
+                    .input-group.input-group-sm
+                        button.btn.btn-outline-secondary.btn-decrement(type="button") −
+                        input.form-control.text-center(type="text" value="1" style="max-width: 40px;")
+                        button.btn.btn-outline-secondary.btn-increment(type="button") +
+                td.text-primary: h5.mb-0 S/. 12.90
+                td 
+                    button.btn.btn-sm 
+                        i.fa-solid.fa-trash

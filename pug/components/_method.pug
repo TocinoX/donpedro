@@ -1,0 +1,47 @@
+// Bloque de métodos de pago
+.w-100#metodosPago
+    // Tarjeta de Crédito
+    .metodo-pago
+        .form-check.d-flex.align-items-center.justify-content-between.py-2.border-bottom
+            .d-flex.align-items-center
+                img(src="img/credito.png" alt="Tarjeta de Crédito" height="40")
+                label.form-check-label.ms-2(for="credito") Tarjeta de Crédito
+            input#credito.form-check-input(type="radio" name="pago" value="credito")
+        .formulario-pago.ps-4.mb-5.d-none#formCredito
+            input.form-control.mt-2(type="text" placeholder="Número de tarjeta")
+            .d-flex.gap-2.mt-2
+                input.form-control(type="text" placeholder="Expiración (MM/AA)")
+                input.form-control(type="text" placeholder="Código de seguridad")
+
+    // Tarjeta de Débito
+    .metodo-pago
+        .form-check.d-flex.align-items-center.justify-content-between.py-2.border-bottom
+            .d-flex.align-items-center
+                img(src="img/debito.png" alt="Tarjeta de Débito" height="40")
+                label.form-check-label.ms-2(for="debito") Tarjeta de Débito
+            input#debito.form-check-input(type="radio" name="pago" value="debito")
+        .formulario-pago.ps-4.mb-5.d-none#formDebito
+            input.form-control.mt-2(type="text" placeholder="Número de tarjeta")
+            .d-flex.gap-2.mt-2
+                input.form-control(type="text" placeholder="Expiración (MM/AA)")
+                input.form-control(type="text" placeholder="Código de seguridad")
+
+    // Yape
+    .metodo-pago
+        .form-check.d-flex.align-items-center.justify-content-between.py-2.border-bottom
+            .d-flex.align-items-center
+                img(src="img/yape.png" alt="Yape" height="40")
+                label.form-check-label.ms-2(for="yape") Yape
+            input#yape.form-check-input(type="radio" name="pago" value="yape")
+        .qr-pago.ps-4.mb-5.d-none#qrYape
+            img.mt-2(src="img/qr.png" alt="QR Yape" width="150")
+
+    // Plin
+    .metodo-pago
+        .form-check.d-flex.align-items-center.justify-content-between.py-2
+            .d-flex.align-items-center
+                img(src="img/plin.png" alt="Plin" height="40")
+                label.form-check-label.ms-2(for="plin") Plin
+            input#plin.form-check-input(type="radio" name="pago" value="plin")
+        .qr-pago.ps-4.mb-5.d-none#qrPlin
+            img.mt-2(src="img/qr.png" alt="QR Plin" width="150")
