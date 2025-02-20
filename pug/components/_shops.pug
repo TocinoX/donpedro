@@ -1,0 +1,44 @@
+h5.text-center.text-primary Visítanos
+h2.text-center.mb-5 Nuestras Tiendas 
+
+.row
+    //- Columna izquierda (más pequeña) - Lista de tiendas
+    .col-12.col-md-6.col-xl-4.mb-4.mb-md-0
+        .card.mb-3.p-3
+            .d-flex.align-items-center
+                i.fa-solid.fa-location-dot.fa-3x.text-primary.mx-4
+                .info.ms-2
+                    h6 Tienda Central
+                    p.mb-1 Av. Carlos Izaguirre 140
+                    b Tel: +51 934 345 654
+                    p.mb-0 tiendacentral@donpedro.com
+
+        .card.mb-3.p-3
+            .d-flex.align-items-center
+                i.fa-solid.fa-location-dot.fa-3x.text-primary.mx-4
+                .info.ms-2
+                    h6 Tienda Norte
+                    p.mb-1 Av.Felipe Arancibia 541
+                    b Tel: +51 943 543 654
+                    p.mb-0 tiendanorte@donpedro.com
+
+        .card.p-3
+            .d-flex.align-items-center
+                i.fa-solid.fa-location-dot.fa-3x.text-primary.mx-4
+                .info.ms-2
+                    h6 Tienda Sur
+                    p.mb-1 Av.Eduardo Habich 615
+                    b Tel: +51 986 234 867
+                    p.mb-0 tiendasur@donpedro.com
+
+    //- Columna derecha (más grande) - Mapa de Google
+    .col-12.col-md-6.col-xl-8
+        .mapa.w-100.h-100
+            iframe(
+                src="https://www.google.com/maps?q=Tambo+Lima&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0; min-height: 400px;"
+                allowfullscreen=""
+                loading="lazy"
+            )

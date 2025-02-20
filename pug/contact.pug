@@ -2,29 +2,18 @@ doctype html
 html(lang="en")
     head
         include components/_head
+
     body 
         header.shadow-sm
             include components/_header
 
-        main 
-            include components/_slider
-
+        main
             .container 
-                section 
-                    include components/_categories
-
-                section 
-                    include components/_trending
-
-            section 
-                include components/_parallax
-
-            .container 
-                section 
-                    include components/_information
+                section
+                    include components/_shops
 
             section(style="margin-bottom: 0;")
-                include components/_invite
+                include components/_form
 
         footer.bg-light-gray.pt-5 
             include components/_footer

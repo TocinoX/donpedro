@@ -1,3 +1,4 @@
+
 //- Navbar principal
 nav.navbar.navbar-expand-lg.bg-light.px-4.navbar-primary
     .container
@@ -36,10 +37,10 @@ nav.navbar.navbar-expand-lg.bg-light.px-4.navbar-secondary.d-none.d-lg-block
 
         //- Menú de navegación
         ul.navbar-nav.ms-auto.d-flex.gap-3
-            li.nav-item: a.nav-link.text-primary(href="#"): b Inicio
-            li.nav-item: a.nav-link.text-dark(href="#"): b Productos
-            li.nav-item: a.nav-link.text-dark(href="#"): b Nosotros
-            li.nav-item: a.nav-link.text-dark(href="#"): b Contacto
+            li.nav-item: a.nav-link(href="./index.html"): b Inicio
+            li.nav-item: a.nav-link.text-dark(href="./products.html"): b Productos
+            li.nav-item: a.nav-link.text-dark(href="./about.html"): b Nosotros
+            li.nav-item: a.nav-link.text-dark(href="./contact.html"): b Contacto
 
 //- Menú lateral (Mobile)
 aside#mobileMenu.shadow
@@ -64,7 +65,7 @@ aside#mobileMenu.shadow
 
         //- Opciones de navegación
         ul.nav.flex-column.mt-4
-            li.nav-item: a.nav-link.text-primary.ps-0(href="#") Inicio
-            li.nav-item: a.nav-link.text-dark.ps-0(href="#") Productos
-            li.nav-item: a.nav-link.text-dark.ps-0(href="#") Nosotros
-            li.nav-item: a.nav-link.text-dark.ps-0(href="#") Contacto
+            li.nav-item: a.nav-link.text-primary.ps-0(href="./index.html") Inicio
+            li.nav-item: a.nav-link.text-dark.ps-0(href="./products.html") Productos
+            li.nav-item: a.nav-link.text-dark.ps-0(href="./about.html") Nosotros
+            li.nav-item: a.nav-link.text-dark.ps-0(href="./contact.html") Contacto

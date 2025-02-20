@@ -59,99 +59,114 @@
         </div>
       </aside>
     </header>
-    <main>
+    <main> 
+      <div class="welcome-container">
+        <div class="welcome-content d-flex justify-content-center align-items-center w-100 h-100 text-white text-center">
+          <div class="container">
+            <h1 class="mb-3">¡Bienvenidos! Somos Tiendas Don Pedro</h1>
+            <p class="mb-3">Somos una cadena de tiendas con 10 años de experiencia en el Perú, ubicados en la provincia de lima, dedicados a satisfacer las necesidades  diarias de nuestros clientes con pasión y excelente servicio</p>
+          </div>
+        </div>
+      </div>
+      <div class="welcome__info bg-white shadow rounded d-none d-lg-flex justify-content-around">
+        <div class="d-flex align-items-center py-3"><i class="fa-solid fa-motorcycle fa-3x text-primary me-3"></i>
+          <div class="service-text">
+            <h6>Entrega Local</h6>
+            <p class="text-gray">En donde estés.</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center py-3"><i class="fa-solid fa-shop fa-3x text-primary me-3"></i>
+          <div class="service-text">
+            <h6>Retiro en Tienda</h6>
+            <p class="text-gray">Ahorra el envío.</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center py-3"><i class="fa-solid fa-credit-card fa-3x text-primary me-3"></i>
+          <div class="service-text">
+            <h6>Métodos de Pago</h6>
+            <p class="text-gray">Rápido y seguro.</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center py-3"><i class="fa-solid fa-headset fa-3x text-primary me-3"></i>
+          <div class="service-text">
+            <h6>Atención 24/7</h6>
+            <p class="text-gray">A tu disposición.  </p>
+          </div>
+        </div>
+      </div>
       <div class="container"> 
         <section> 
-          <div class="d-flex justify-content-center align-items-center text-gray mb-5">
-            <h2 class="d-none d-lg-block">Carrito de Compras</h2><i class="fa-solid fa-arrow-right fa-xl mx-4 d-none d-lg-block"></i>
-            <h2 class="text-primary text-decoration-underline">Datos de Envío</h2><i class="fa-solid fa-arrow-right fa-xl mx-4 d-none d-lg-block"></i>
-            <h2 class="d-none d-lg-block">Método de Pago</h2>
-          </div>
-          <div class="row"> 
-            <div class="col-12 col-lg-8 mb-5">
-              <form>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="nombre">Nombre</label>
-                    <input class="form-control" id="nombre" type="text" placeholder="Tu nombre">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="apellido">Apellido</label>
-                    <input class="form-control" id="apellido" type="text" placeholder="Tu apellido">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-control" id="email" type="email" placeholder="tucorreo@example.com">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="telefono">Teléfono</label>
-                    <input class="form-control" id="telefono" type="number" placeholder="Tu número de teléfono">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label class="form-label" for="distrito">Distrito</label>
-                    <select class="form-select" id="distrito">
-                      <option value="">Selecciona tu distrito</option>
-                      <option value="1">Distrito 1</option>
-                      <option value="2">Distrito 2</option>
-                      <option value="3">Distrito 3</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label class="form-label" for="direccion">Dirección</label>
-                    <input class="form-control" id="direccion" type="text" placeholder="Tu dirección completa">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label class="form-label" for="notas">Notas</label>
-                    <textarea class="form-control" id="notas" rows="3" placeholder="Escribe alguna nota adicional"></textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="shadow rounded py-5 p-4">
-                <h4 class="mb-4 text-center">Resumen de la Compra </h4>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0">Coca Cola <b>x1</b></p>
-                  <p class="mb-0 text-gray">S/. 12.90</p>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0"><b>Subtotal</b></p>
-                  <p class="mb-0 text-gray">S/. 12.90</p>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="mb-0"><b>Envío</b></p>
-                  <div class="d-flex flex-column align-items-end">
-                    <div class="form-check d-flex align-items-center">
-                      <label class="form-check-label" for="delivery"> <small>Delivery: <span class="text-primary">S/10.00</span></small></label>
-                      <input class="form-check-input ms-2" id="delivery" type="radio" name="shipping" checked>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <label class="form-check-label" for="pickup"><small>Recogida en tienda</small></label>
-                      <input class="form-check-input ms-2" id="pickup" type="radio" name="shipping">
-                    </div>
-                  </div>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0 fs-4"><b>Total</b></p>
-                  <p class="mb-0 fs-4 text-primary"><b>S/. 12.90</b></p>
-                </div>
-                <button class="btn btn-primary w-100 mt-4">Continuar Compra</button>
-              </div>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6"><img class="rounded w-100" src="./img/history.jpg" alt=""></div>
+            <div class="col-12 col-md-6 ps-5 mt-5 mt-md-0 text-center text-md-end">
+              <h5 class="text-primary">Nuestra Historia</h5>
+              <h2 class="mb-5">¿Quiénes Somos?</h2>
+              <p>Fundada hace más de 10 años, la cadena de minimarkets Don Pedro nació con la visión de ofrecer una experiencia de compra cercana y confiable en Lima. Desde sus inicios, la empresa se ha enfocado en servir a sus clientes con compromiso y pasión, adaptándose a sus necesidades diarias. A lo largo de la última década, Don Pedro ha crecido gracias al respaldo y preferencia de la comunidad, convirtiéndose en un referente dentro de su sector por su enfoque en el servicio y la calidad.</p>
             </div>
           </div>
         </section>
       </div>
+      <section>
+        <div class="philosophy-container">
+          <div class="philosophy-content d-flex align-items-center w-100 h-100 text-white">
+            <div class="container"> 
+              <div class="d-flex flex-column flex-md-row">
+                <div class="mission text-center p-5 border-md-end border-bottom border-bottom-md-none">
+                  <h5 class="mb-2">¿Qué Hacemos?</h5>
+                  <h1 class="mb-4">Misión</h1>
+                  <p>Ofrecer productos de calidad a precios accesibles, brindando una atención cercana y confiable que mejore la experiencia de compra diaria de nuestros clientes.</p>
+                </div>
+                <div class="vision text-center p-5">
+                  <h5 class="mb-2">¿A Dónde Vamos?</h5>
+                  <h1 class="mb-4">Visión</h1>
+                  <p>Ser la cadena de minimarkets preferida por su calidad, servicio y compromiso con la comunidad, expandiéndonos para llegar a más zonas de Lima.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container"> 
+        <h5 class="text-center text-primary">Más Populares </h5>
+        <h2 class="text-center mb-5">Productos en Tendencia </h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-4 shadow-sm h-100"><i class="fa-solid fa-handshake fa-4x text-primary"></i>
+              <h5 class="mt-3">Compromiso</h5>
+              <p class="text-muted">Trabajo constante para ofrecer un servicio de calidad a cada cliente.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-4 shadow-sm h-100"><i class="fa-solid fa-medal fa-4x text-primary"></i>
+              <h5 class="mt-3">Calidad</h5>
+              <p class="text-muted">Productos y atención que cumplen con altos estándares.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-4 shadow-sm h-100"><i class="fa-solid fa-heart fa-4x text-primary"></i>
+              <h5 class="mt-3">Cercanía</h5>
+              <p class="text-muted">Conexión auténtica con la comunidad y sus necesidades.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center p-4 shadow-sm h-100"><i class="fa-solid fa-lightbulb fa-4x text-primary"></i>
+              <h5 class="mt-3">Innovación</h5>
+              <p class="text-muted">Mejora continua en procesos y expansión para llegar a más personas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section style="margin-bottom: 0;">
+        <div class="invite-container">
+          <div class="invite-content d-flex align-items-center w-100 h-100 text-white">
+            <div class="container">
+              <h5 class="mb-3">¡Qué Esperas!</h5>
+              <h1 class="mb-3">Tenemos las Mejores Ofertas</h1>
+              <p>Ven a nuestras tiendas o has un pedido</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-light-gray pt-5"> 
       <div class="container py-5">

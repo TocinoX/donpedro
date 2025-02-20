@@ -61,97 +61,77 @@
     </header>
     <main>
       <div class="container"> 
-        <section> 
-          <div class="d-flex justify-content-center align-items-center text-gray mb-5">
-            <h2 class="d-none d-lg-block">Carrito de Compras</h2><i class="fa-solid fa-arrow-right fa-xl mx-4 d-none d-lg-block"></i>
-            <h2 class="text-primary text-decoration-underline">Datos de Envío</h2><i class="fa-solid fa-arrow-right fa-xl mx-4 d-none d-lg-block"></i>
-            <h2 class="d-none d-lg-block">Método de Pago</h2>
-          </div>
-          <div class="row"> 
-            <div class="col-12 col-lg-8 mb-5">
-              <form>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="nombre">Nombre</label>
-                    <input class="form-control" id="nombre" type="text" placeholder="Tu nombre">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="apellido">Apellido</label>
-                    <input class="form-control" id="apellido" type="text" placeholder="Tu apellido">
+        <section>
+          <h5 class="text-center text-primary">Visítanos</h5>
+          <h2 class="text-center mb-5">Nuestras Tiendas </h2>
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 mb-4 mb-md-0">
+              <div class="card mb-3 p-3">
+                <div class="d-flex align-items-center"><i class="fa-solid fa-location-dot fa-3x text-primary mx-4"></i>
+                  <div class="info ms-2">
+                    <h6>Tienda Central</h6>
+                    <p class="mb-1">Av. Carlos Izaguirre 140</p><b>Tel: +51 934 345 654</b>
+                    <p class="mb-0">tiendacentral@donpedro.com</p>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="email">Email</label>
-                    <input class="form-control" id="email" type="email" placeholder="tucorreo@example.com">
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="telefono">Teléfono</label>
-                    <input class="form-control" id="telefono" type="number" placeholder="Tu número de teléfono">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label class="form-label" for="distrito">Distrito</label>
-                    <select class="form-select" id="distrito">
-                      <option value="">Selecciona tu distrito</option>
-                      <option value="1">Distrito 1</option>
-                      <option value="2">Distrito 2</option>
-                      <option value="3">Distrito 3</option>
-                    </select>
+              </div>
+              <div class="card mb-3 p-3">
+                <div class="d-flex align-items-center"><i class="fa-solid fa-location-dot fa-3x text-primary mx-4"></i>
+                  <div class="info ms-2">
+                    <h6>Tienda Norte</h6>
+                    <p class="mb-1">Av.Felipe Arancibia 541</p><b>Tel: +51 943 543 654</b>
+                    <p class="mb-0">tiendanorte@donpedro.com</p>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label class="form-label" for="direccion">Dirección</label>
-                    <input class="form-control" id="direccion" type="text" placeholder="Tu dirección completa">
+              </div>
+              <div class="card p-3">
+                <div class="d-flex align-items-center"><i class="fa-solid fa-location-dot fa-3x text-primary mx-4"></i>
+                  <div class="info ms-2">
+                    <h6>Tienda Sur</h6>
+                    <p class="mb-1">Av.Eduardo Habich 615</p><b>Tel: +51 986 234 867</b>
+                    <p class="mb-0">tiendasur@donpedro.com</p>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <label class="form-label" for="notas">Notas</label>
-                    <textarea class="form-control" id="notas" rows="3" placeholder="Escribe alguna nota adicional"></textarea>
-                  </div>
-                </div>
-              </form>
+              </div>
             </div>
-            <div class="col-12 col-lg-4">
-              <div class="shadow rounded py-5 p-4">
-                <h4 class="mb-4 text-center">Resumen de la Compra </h4>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0">Coca Cola <b>x1</b></p>
-                  <p class="mb-0 text-gray">S/. 12.90</p>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0"><b>Subtotal</b></p>
-                  <p class="mb-0 text-gray">S/. 12.90</p>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="mb-0"><b>Envío</b></p>
-                  <div class="d-flex flex-column align-items-end">
-                    <div class="form-check d-flex align-items-center">
-                      <label class="form-check-label" for="delivery"> <small>Delivery: <span class="text-primary">S/10.00</span></small></label>
-                      <input class="form-check-input ms-2" id="delivery" type="radio" name="shipping" checked>
-                    </div>
-                    <div class="form-check d-flex align-items-center">
-                      <label class="form-check-label" for="pickup"><small>Recogida en tienda</small></label>
-                      <input class="form-check-input ms-2" id="pickup" type="radio" name="shipping">
-                    </div>
-                  </div>
-                </div>
-                <hr>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0 fs-4"><b>Total</b></p>
-                  <p class="mb-0 fs-4 text-primary"><b>S/. 12.90</b></p>
-                </div>
-                <button class="btn btn-primary w-100 mt-4">Continuar Compra</button>
+            <div class="col-12 col-md-6 col-xl-8">
+              <div class="mapa w-100 h-100">
+                <iframe src="https://www.google.com/maps?q=Tambo+Lima&amp;output=embed" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
           </div>
         </section>
       </div>
+      <section style="margin-bottom: 0;">
+        <div class="contact-container">
+          <div class="contact-content d-flex align-items-center w-100 h-100 py-5 text-white">
+            <div class="container">
+              <form class="p-5 border rounded">
+                <h2 class="text-center mb-4">Contacto</h2>
+                <div class="mb-3">
+                  <label class="form-label" for="nombre">Nombre</label>
+                  <input class="form-control" id="nombre" type="text" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="email">Correo Electrónico</label>
+                  <input class="form-control" id="email" type="email" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="telefono">Teléfono</label>
+                  <input class="form-control" id="telefono" type="tel" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="mensaje">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary" type="submit"><i class="bi bi-send me-2"></i>Enviar Mensaje</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-light-gray pt-5"> 
       <div class="container py-5">

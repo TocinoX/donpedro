@@ -1,0 +1,25 @@
+.contact-container
+    .contact-content.d-flex.align-items-center.w-100.h-100.py-5.text-white
+        .container
+            form.p-5.border.rounded
+                h2.text-center.mb-4 Contacto
+                .mb-3
+                    label.form-label(for="nombre") Nombre
+                    input#nombre.form-control(type="text" required)
+
+                .mb-3
+                    label.form-label(for="email") Correo Electrónico
+                    input#email.form-control(type="email" required)
+
+                .mb-3
+                    label.form-label(for="telefono") Teléfono
+                    input#telefono.form-control(type="tel" required)
+
+                .mb-3
+                    label.form-label(for="mensaje") Mensaje
+                    textarea#mensaje.form-control(rows="4" required)
+
+                .text-center
+                    button.btn.btn-primary(type="submit")
+                        i.bi.bi-send.me-2
+                        | Enviar Mensaje

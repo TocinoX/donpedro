@@ -1,0 +1,34 @@
+.d-none.d-lg-block  
+    h5 Categoría
+    .form-check.me-3
+        input#dulces.form-check-input(type="checkbox" name="categoria" value="dulces")
+        label.form-check-label(for="dulces") Dulces
+    .form-check.me-3
+        input#frutas.form-check-input(type="checkbox" name="categoria" value="frutas")
+        label.form-check-label(for="frutas") Frutas
+    .form-check.me-3
+        input#bebidas.form-check-input(type="checkbox" name="categoria" value="bebidas")
+        label.form-check-label(for="bebidas") Bebidas
+    .form-check.me-3
+        input#bebidasAlcoholicas.form-check-input(type="checkbox" name="categoria" value="bebidas_alcoholicas")
+        label.form-check-label(for="bebidasAlcoholicas") Bebidas Alcohólicas
+    .form-check.me-3
+        input#verduras.form-check-input(type="checkbox" name="categoria" value="verduras")
+        label.form-check-label(for="verduras") Verduras
+    .form-check.me-3
+        input#embutidos.form-check-input(type="checkbox" name="categoria" value="embutidos")
+        label.form-check-label(for="embutidos") Embutidos
+    .form-check.me-3
+        input#higiene.form-check-input(type="checkbox" name="categoria" value="higiene")
+        label.form-check-label(for="higiene") Higiene
+    .form-check.me-3
+        input#abarrotes.form-check-input(type="checkbox" name="categoria" value="abarrotes")
+        label.form-check-label(for="abarrotes") Abarrotes
+
+    h5.mt-4 Precio 
+    .d-flex.align-items-center
+        input#precioMin.form-control.form-control-sm.me-2(type="number" name="precioMin" min="0" placeholder="Min" style="width: 64px")
+        span.mx-2 -  
+        input#precioMax.form-control.form-control-sm.ms-2(type="number" name="precioMax" min="0" placeholder="Max" style="width: 64px")
+        button.btn.btn-outline-secondary.btn-sm.ms-2(type="submit" title="Aplicar filtro")
+            i.fa-solid.fa-chevron-right

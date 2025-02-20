@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        include components/_head
+    body 
+        header.shadow-sm
+            include components/_header
+
+        main 
+            .container 
+                section 
+                    .row.align-items-end
+                        .col-3
+                            h4.d-none.d-lg-block Filtros
+                            
+                        .col-12.col-sm-10.col-lg-6.text-center.text-sm-start
+                            h5.text-primary Sin Filtros
+                            h2 Todos los Productos
+
+                        .col-12.col-sm-2.col-lg-3.mt-2
+                            button.btn.btn-outline-dark.float-end.w-100.w-sm-auto.px-4.rounded-pill
+                                span.me-4.d-none Ordenar por 
+                                i.fa-solid.fa-arrow-down-a-z
+                        
+                        .col-12.mt-2.d-lg-none
+                            button.btn.btn-primary.w-100 Filtros
+
+
+                    hr
+
+                    .row 
+                        .col-3 
+                            include components/_filters.pug
+
+                        .col-12.col-lg-9
+                            include components/_products.pug
+                        
+
+        script(src="https://kit.fontawesome.com/1822c1a120.js") 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js") 
+        script(src="js/main.js") 

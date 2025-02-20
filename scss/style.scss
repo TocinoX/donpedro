@@ -8,34 +8,6 @@
 @import "components/parallax";
 @import "components/invite";
 @import "components/table";
-
-#menuAdmin {
-    width: 300px;
-}
-
-#mainAdmin {
-    width: calc(100% - 300px);
-}
-
-.status-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 8px;
-
-    &.green {
-        background-color: green;
-    }
-    &.red {
-        background-color: red;
-    }
-    &.orange {
-        background-color: orange;
-    }
-}
-
-.selected-status {
-    margin-left: 5px;
-}
-
+@import "components/welcome";
+@import "components/philosophy";
+@import "components/form";

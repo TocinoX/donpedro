@@ -15,7 +15,17 @@ if (closeButton && menu) {
     });
 }
 
-//Cantidad de productos
+//Slider
+let carousel = document.querySelector("#carousel");
+
+if (carousel) {
+    setInterval(() => {
+        let carouselInstance = new bootstrap.Carousel(carousel);
+        carouselInstance.next(); // Avanza al siguiente slide
+    }, 3000);
+}
+
+//Aumentar o disminuir la cantidad productos de un bloque de productos
 const products = document.querySelectorAll(".product");
 
 products.forEach(product => {
@@ -55,24 +65,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("qrPlin").classList.remove("d-none");
             }
         });
-    });
-});
-
-//Dropdown estatus
-document.querySelectorAll(".dropdown-menu a").forEach(item => {
-    item.addEventListener("click", function (e) {
-        e.preventDefault();
-        
-        let dropdown = this.closest(".dropdown");
-        let statusText = dropdown.querySelector(".selected-status");
-        let statusDot = dropdown.querySelector(".status-dot");
-        
-        // Obtener valores seleccionados
-        let newText = this.innerText.trim();
-        let newColor = this.dataset.color;
-        
-        // Actualizar el texto y el color en el botón
-        statusText.innerText = newText;
-        statusDot.className = "status-dot " + newColor;
     });
 });

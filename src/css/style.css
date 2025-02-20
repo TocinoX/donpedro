@@ -20,6 +20,21 @@ hr {
 				width: fit-content;
 }
 
+@media (min-width: 576px) {
+				.w-sm-auto {
+								width: auto !important;
+				}
+}
+@media (min-width: 768px) { /* A partir de md */
+				.border-md-end {
+								border-right: 1px solid #dee2e6; /* Color de borde de Bootstrap */
+				}
+}
+@media (min-width: 768px) { /* A partir de md */
+				.border-bottom-md-none {
+								border-bottom: none !important;
+				}
+}
 .btn-primary {
 				background-color: var(--bs-primary) !important;
 				border-color: var(--bs-primary) !important;
@@ -441,31 +456,58 @@ table .input-group button {
 				width: 30px;
 }
 
-#menuAdmin {
-				width: 300px;
+.welcome-container {
+				aspect-ratio: 1/1;
+				background-image: url("../img/welcome.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+}
+@media (min-width: 768px) {
+				.welcome-container {
+								height: 620px;
+								aspect-ratio: auto;
+				}
+}
+.welcome-container .welcome-content {
+				background-color: rgba(0, 0, 0, 0.5);
 }
 
-#mainAdmin {
-				width: calc(100% - 300px);
+.welcome__info {
+				position: relative;
+				bottom: 50px;
+				width: 90%;
+				max-width: 1440px;
+				margin: 0 auto;
 }
 
-.status-dot {
-				display: inline-block;
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-				margin-right: 8px;
+.philosophy-container {
+				aspect-ratio: 1/1;
+				background-image: url("../img/philosophy.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
 }
-.status-dot.green {
-				background-color: green;
+@media (min-width: 768px) {
+				.philosophy-container {
+								height: 620px;
+								aspect-ratio: auto;
+				}
 }
-.status-dot.red {
-				background-color: red;
-}
-.status-dot.orange {
-				background-color: orange;
+.philosophy-container .philosophy-content {
+				background-color: rgba(0, 0, 0, 0.5);
 }
 
-.selected-status {
-				margin-left: 5px;
+.contact-container {
+				background-image: url("../img/contact.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+}
+.contact-container .contact-content {
+				background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-container .contact-content form {
+				max-width: 512px;
 }
